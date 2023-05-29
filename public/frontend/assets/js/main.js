@@ -632,7 +632,7 @@
         09. ScrollUp
     ---------------------------- */
     $.scrollUp({
-        scrollText: '<i class="ti-arrow-up"></i>',
+        scrollText: '<i class="fa fa-angle-double-up"></i>',
         easingType: "linear",
         scrollSpeed: 900,
         animation: "fade",

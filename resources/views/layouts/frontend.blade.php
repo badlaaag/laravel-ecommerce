@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ config('app.name', 'Laravel') }} |  @yield('title')</title>
+        <title>Tech-O-Matic</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Favicon -->
@@ -35,7 +35,37 @@
 
         <!-- header start -->
             <header>
-                <div class="header-top-furniture wrapper-padding-2 res-header-sm">
+                <div>
+                    <div class="container-fluid" style="background-color:#131921; border-bottom:1px solid white;">
+                        <div class="row align-items-center">
+                            <div class="col-md-2">
+                                <div class="same-language-currency use-style text-white mx-lg-4 py-lg-2 text-center" >
+                                    <span>USD <i class="fa fa-angle-down"></i></span>
+                                    <div class="lang-car-dropdown">
+                                        <ul>
+                                            <li><button value="PHP">PHP</button></li>
+                                            <li><button value="EUR">EUR</button></li>
+                                            <li><button value="USD">USD</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="same-language-currency text-center text-white">
+                                    <p>Call Us 09430901821</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <div class="header-offer text-center text-white">
+                                    <p>Free delivery on order over <span style="color: bisque">$21.76</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-top-furniture wrapper-padding-2 res-header-sm" style="background-color: #531516;">
                     <div class="container-fluid">
                         <div class="header-bottom-wrapper">
                             <div class="logo-2 furniture-logo ptb-30">
@@ -43,7 +73,7 @@
                                     <img height="60" style="transform:scale(1.5);object-fit: cover;" src="{{ asset('frontend/assets/img/logo/logo.png') }}" alt="">
                                 </a>
                             </div>
-                            <div class="menu-style-2 furniture-menu menu-hover">
+                            <div class="menu-style-2 furniture-menu menu-hover" >
                                 <nav>
                                     <ul>
                                         <li>
@@ -52,7 +82,7 @@
                                         <li>
                                             <a href="{{ route('shop.index') }}">shop</a>
                                         </li>
-                                        <li><a href="#">Categories</a>
+                                        <li><a href="#">Blogs</a>
                                             <ul class="single-dropdown">
                                                 @foreach($categories_menu as $category_menu)
                                                     <li><a href="{{ route('shop.index', $category_menu->slug) }}">{{ $category_menu->name }}</a></li>
@@ -60,7 +90,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">contact</a>
+                                            <a href="#">contact us</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -121,14 +151,14 @@
                                             <li>
                                                 <a href="{{ route('shop.index') }}">shop</a>
                                             </li>
-                                            <li><a href="#">categories</a>
+                                            <li><a href="#">Blogs</a>
                                                 <ul>
                                                 @foreach($categories_menu as $category_menu)
                                                     <li><a href="{{ route('shop.index', $category_menu->slug) }}">{{ $category_menu->name }}</a></li>
                                                 @endforeach
                                                 </ul>
                                             </li>
-                                            <li><a href="#"> Contact  </a></li>
+                                            <li><a href="#"> Contact us </a></li>
                                         </ul>
                                     </nav>							
                                 </div>
@@ -187,7 +217,7 @@
         @yield('content')
 
         <!-- footer -->
-        <footer class="footer-area">
+        <footer class="footer-area" style="background-color:#531516;">
             <div class="footer-top-area pt-70 pb-35 wrapper-padding-5">
                 <div class="container-fluid">
                     <div class="widget-wrapper">
@@ -195,6 +225,7 @@
                         <img height="60" style="transform:scale(1.5);object-fit: cover;" src="{{ asset('frontend/assets/img/logo/logo.png') }}" alt="">
                             <div class="footer-about-2">
                                 <p>There are many variations of passages of Lorem Ipsum <br>the majority have suffered alteration in some form, by <br> injected humour</p>
+                                <p>Copyright © Tech-O-Matic 2023 . All Right Reserved.</p>
                             </div>
                         </div>
                         <div class="footer-widget mb-30">
@@ -240,17 +271,6 @@
                                         </div>
                                     </form>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom ptb-20 gray-bg-8">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <div class="copyright-furniture">
-                                <p>Copyright © <a href="https://hastech.company/">HasTech</a> 2018 . All Right Reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -315,5 +335,6 @@
                 });
             });
         </script>
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24469787.js"></script>
     </body>
 </html>
