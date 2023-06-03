@@ -58,8 +58,8 @@
                     <img src="{{ asset('frontend/assets/img/banner/hero.png') }}" class="d-block mx-lg-auto img-fluid " id="image" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3" style="color:#131921">Coolest phones to have</h1>
-                    <p class="lead">On paper the Galaxy S21 Ultra seems like a clear winner. It has a hybrid zoom with 3x and 10 x optical lenses, support for Samsung's S Pen stylus, the more powerful Snapdragon 888 chipset, plus an extra year of Android and security updates.</p>
+                    <h4 class="display-5  lh-1 mb-3" style="color:#131921">Coolest phones to have</h4>
+                    <h1 class="lead text-black mb-3" style="font-weight: 600;font-size:50px">Summer offer 2023 Collection</h1>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 mr-2 " style="cursor: pointer;">Shop Now</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4"style="cursor: pointer;">Login</button>
