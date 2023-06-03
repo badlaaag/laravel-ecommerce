@@ -189,6 +189,6 @@
                     </div>
                 </div>
             </div>
-        {{-- </div> --}}
+        </div> 
         <!-- end products -->
 @endsection
