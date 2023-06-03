@@ -77,20 +77,20 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="/">home</a>
+                                            <a href={{URL::to('/')}}>home</a>
                                         </li>
                                         <li>
                                             <a href="{{ route('shop.index') }}">shop</a>
                                         </li>
-                                        <li><a href="#">Blogs</a>
-                                            <ul class="single-dropdown">
+                                        <li><a href={{URL::to('/blog')}}>Blogs</a>
+                                            {{-- <ul class="single-dropdown">
                                                 @foreach($categories_menu as $category_menu)
                                                     <li><a href="{{ route('shop.index', $category_menu->slug) }}">{{ $category_menu->name }}</a></li>
                                                 @endforeach
-                                            </ul>
+                                            </ul> --}}
                                         </li>
                                         <li>
-                                            <a href="#">contact us</a>
+                                            <a href={{URL::to('/contact')}}>contact us</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -146,19 +146,19 @@
                                     <nav id="mobile-menu-active">
                                         <ul class="menu-overflow">
                                             <li>
-                                                <a href="#">HOME</a>
+                                                <a href={{URL::to('/')}}>HOME</a>
                                             </li>
                                             <li>
                                                 <a href="{{ route('shop.index') }}">shop</a>
                                             </li>
-                                            <li><a href="#">Blogs</a>
-                                                <ul>
+                                            <li><a href={{URL::to('/blog')}}>Blogs</a>
+                                                {{-- <ul> 
                                                 @foreach($categories_menu as $category_menu)
                                                     <li><a href="{{ route('shop.index', $category_menu->slug) }}">{{ $category_menu->name }}</a></li>
                                                 @endforeach
-                                                </ul>
+                                                </ul>--}}
                                             </li>
-                                            <li><a href="#"> Contact us </a></li>
+                                            <li><a href={{URL::to('/contact')}}> Contact us </a></li>
                                         </ul>
                                     </nav>							
                                 </div>
