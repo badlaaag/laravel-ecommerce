@@ -11,7 +11,7 @@
 	
     1. Template default css (assets/css/bundle.css)
     2. index page
-        2.1 Header sidebar
+        2.1 Top header
         2.2 Menu style
         2.3 Currency style
         2.4 Cart style
@@ -119,7 +119,62 @@
 -----------------------------------------------------------------------------------*/
 
 /* 2. index page */
-/* 2.1 Header sidebar */
+/* 2.1 topheader */
+.same-language-currency {
+    position: relative;
+  }
+  
+  .lang-car-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #131921;
+    padding: 10px;
+    z-index: 1;
+}
+
+.lang-car-dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.lang-car-dropdown ul li {
+    margin-bottom: 5px;
+}
+.lang-car-dropdown ul li button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+  .same-language-currency:hover .lang-car-dropdown {
+    display: block;
+}
+  
+  .same-language-currency ul p{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: center;
+  }
+  
+  .same-language-currency li {
+    display: block;
+  }
+  
+  .same-language-currency button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .same-language-currency button:hover {
+    background-color: #f0f0f0;
+  }
+
 .header-left-sidebar {
     float: left;
     height: 100vh;
@@ -1189,6 +1244,15 @@
     position: relative;
     z-index: 9;
 }
+.footer-title h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 16px;
+    margin-bottom: 30px;
+}
+
 .footer-widget-title {
     color: #ffffff;
     font-size: 18px;
@@ -1196,93 +1260,33 @@
     margin-bottom: 40px;
     text-transform: uppercase;
 }
+.footer-list ul li {
+    margin: 0 0 11px;
+    color:white;
+}
+.footer-list a{
+    color: white;
+}
+.footer-list a:hover{
+    color: #ffe9c7;
+}
+
 .footer-widget-content li {
     margin-bottom: 20px;
 }
 .footer-widget-content li:last-child {
     margin-bottom: 0px;
 }
-.footer-widget-content li a {
-    color: #999999;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+
+.copyright .footer-logo {
+    margin-bottom: 12px;
+    margin-top: 41px;
 }
-.footer-widget-content li a:hover {
+.copyright p {
     color: #fff;
+    letter-spacing: .9px;
 }
-.footer-newsletter > p {
-    color: #999999;
-    margin: 0;
-}
-.subscribe-form form {
-    position: relative;
-}
-.subscribe-form form input {
-    background: #1e1e1e none repeat scroll 0 0;
-    border: 2px solid transparent;
-    color: #999999;
-    font-size: 12px;
-    height: 45px;
-    padding-left: 30px;
-    padding-right: 55px;
-    position: relative;
-}
-.mc-form .mc-news {
-    display: none;
-}
-.subscribe-form form input::-moz-placeholder {
-    color: #999999;
-    opacity: 1;
-}
-.subscribe-form form input::-webkit-placeholder {
-    color: #999999;
-    opacity: 1;
-}
-.subscribe-form .mc-form .clear {
-    background: rgba(0, 0, 0, 0) url("../../assets/img/icon-img/1.png")
-        no-repeat scroll right 0 center;
-    bottom: 0;
-    display: inline-block;
-    position: absolute;
-    right: 20px;
-    z-index: 9999;
-}
-.subscribe-form .clear input {
-    border: medium none;
-    padding: 0;
-    text-indent: -99999px;
-    width: 37px;
-    background-color: transparent;
-}
-.footer-contact > p {
-    color: #999999;
-    margin-bottom: 11px;
-}
-.footer-contact > p span i {
-    font-size: 20px;
-}
-.footer-contact > p span {
-    display: inline-block;
-    width: 33px;
-}
-.footer-contact > p:last-child {
-    margin-bottom: 0px;
-}
-.subscribe-form {
-    margin: 28px 0 40px;
-}
-.copyright > p {
-    color: #999;
-    line-height: 1;
-    margin: 0;
-    letter-spacing: 1px;
-}
-.copyright > p a {
-    color: #fff;
-}
-.copyright > p a:hover {
-    text-decoration: underline;
-}
+
 /*----------- 3. Book page ---------*/
 /* 3.1 Header style of book */
 
@@ -4783,6 +4787,7 @@ a.icon-cart-furniture span.green {
 }
 .single-services {
     display: flex;
+    width: 25%;
 }
 .services-content > h4 {
     font-size: 24px;
@@ -9636,3 +9641,13 @@ input.cart-plus-minus-box {
 .modal-content .close:hover {
     color: #050035;
 }
+/*services*/
+.support-wrap {
+    display: flex;
+}
+.support-wrap .support-content h5 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color:black
+}
+/*blog*/
