@@ -58,7 +58,7 @@
 										</tr>
 									@empty
 										<tr>
-											<td colspan="6">The cart is empty!</td>
+											<td colspan="6" class="text-black">The cart is empty!</td>
 										</tr>
 									@endforelse
 								</tbody>

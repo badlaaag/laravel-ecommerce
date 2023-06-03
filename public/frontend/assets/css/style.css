@@ -5599,7 +5599,7 @@ thead {
 }
 .cart-page-total > a:hover {
     background-color: #050035;
-    color: #fff;
+    color: #333333;
     border: 1px solid #050035;
 }
 .cart-page-total > h2 {
@@ -5944,7 +5944,7 @@ h5.panel-title {
     display: block;
 }
 .sidebar-title {
-    color: #ffff;
+    color: #333333;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -6176,7 +6176,7 @@ h5.panel-title {
     color: #090909;
     font-size: 18px;
     height: inherit;
-    line-height: 1;
+    /* line-height: 1; */
     padding-left: 0;
     width: 200px;
 }
@@ -6192,7 +6192,7 @@ h5.panel-title {
 }
 .shop-tab a.active,
 .shop-tab a:hover {
-    color: #050035;
+    color: #531516;
 }
 .pagination-style ul li {
     display: inline-block;
