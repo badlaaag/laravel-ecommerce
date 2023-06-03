@@ -174,24 +174,26 @@
                     <div class="container-fluid">
                         <div class="furniture-bottom-wrapper">
                             <div class="furniture-login">
-                                <ul>
-                                    @guest
-                                        <li>Get Access: <a href="{{ route('login') }}">Login</a></li>
-                                        <li><a href="{{ route('register') }}">Register</a></li>
-                                    @else
-                                        <li>Hello: <a href="{{ route('profile.index') }}">{{ auth()->user()->username }}</a></li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                    @endguest
-                                </ul>
-                            </div>
+                               
+                                    <ul>
+                                        @guest
+                                            <li><a href="{{ route('login') }}">Login</a></li>
+                                            <li><a href="{{ route('register') }}">Register</a></li>
+                                        @else
+                                            <li>Hello: <a href="{{ route('profile.index') }}">{{ auth()->user()->username }}</a></li>
+                                            <li><a href="{{ route('login')}}">My Dashboard</a></li>
+                                            <a href="{{ route('logout') }}"
+                                                onclick="event.preventDefault();
+                                                            document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+    
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                @csrf
+                                            </form>
+                                        @endguest
+                                    </ul>
+                                </div>
                             <div class="furniture-search">
                                 <form>
                                     <input placeholder="I am Searching for . . ." type="text" name="q" autocomplete="off" id="search">
