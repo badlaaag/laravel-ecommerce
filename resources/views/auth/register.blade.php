@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 pt-5 pb-5">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
@@ -61,9 +61,18 @@
                             </div>
                         </div>
 
+
+                        <style>
+                            #register:hover{
+                                background-color: #a72c2e!important;
+                                color: white!important;
+                            }
+
+                        </style>
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn text-white" style="background-color:#531516; "id="register">
                                     {{ __('Register') }}
                                 </button>
                             </div>

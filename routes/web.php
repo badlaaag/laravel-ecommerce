@@ -66,6 +66,8 @@ use App\Http\Controllers\ContactController;
             return view('frontend.homepage');
         });
 
+        Route::post('/admin/users', 'UserController@store')->name('admin.users.store');
+
 
         Route::resource('favorite', \App\Http\Controllers\FavoriteController::class)->only(['index','store','destroy']);
         Route::resource('cart', \App\Http\Controllers\CartController::class)->only(['index','store','update', 'destroy']);

@@ -30,6 +30,7 @@ class User extends Authenticatable
         'city_id',
         'postcode'
     ];
+    
 
     /**
      * The attributes that should be hidden for serialization.
