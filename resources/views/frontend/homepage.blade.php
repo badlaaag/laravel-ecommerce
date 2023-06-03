@@ -2,7 +2,7 @@
 @section('title', 'Homepage')
 @section('content')
      <!-- slides -->
-     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">       
+     {{-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">       
             <div class="carousel-inner">
                 @foreach($slides as $key => $slide)
                     <div class="carousel-item {{$key == 0 ? 'active' : '' }}">
@@ -23,7 +23,53 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div>
+        </div> --}}
+        <style>
+            .btn{
+                border-color: #531516!important;
+                color: #531516!important;
+            }
+            .btn:hover{
+                border:none!important;
+                color:white!important;
+                background-color: #531516!important;
+            }
+
+            .btn-primary {
+                color: white!important;
+                background-color:#531516!important;
+                border:none;
+            }
+            .btn-primary:hover{
+                background-color:black!important;
+                color:white;
+                border:none;
+            }
+            #image{
+                border-radius: 7px;
+                background: #e0e0e0;
+                box-shadow:  5px 5px 3px #acacac,-5px -5px 3px #ffffff;
+            }
+        </style>
+        <div class="container-fluid" style="background-color: bisque;">
+            <div class="container col-xxl-8 px-4 py-5" >
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="{{ asset('frontend/assets/img/banner/hero.png') }}" class="d-block mx-lg-auto img-fluid " id="image" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3" style="color:#131921">Coolest phones to have</h1>
+                    <p class="lead">On paper the Galaxy S21 Ultra seems like a clear winner. It has a hybrid zoom with 3x and 10 x optical lenses, support for Samsung's S Pen stylus, the more powerful Snapdragon 888 chipset, plus an extra year of Android and security updates.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 mr-2 " style="cursor: pointer;">Shop Now</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4"style="cursor: pointer;">Login</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>    
+
+
         <!-- end slides -->
 
         <!-- categories -->
@@ -143,6 +189,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        {{-- </div> --}}
         <!-- end products -->
 @endsection
