@@ -336,5 +336,52 @@
             });
         </script>
         <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/24469787.js"></script>
+        <script>
+            // Get the selected currency button
+            var selectedCurrency = document.getElementById("selected-currency");
+          
+            // Get the conversion rate for each currency (replace with your own rates)
+            var conversionRates = {
+              "PHP": 50.0,
+              "EUR": 0.85,
+              "USD": 1.0
+            };
+          
+            // Function to handle currency conversion
+            function convertCurrency(targetCurrency) {
+              // Get the conversion rate for the selected currency
+              var rate = conversionRates[targetCurrency];
+          
+              // Convert the delivery amount to the target currency
+              var deliveryAmount = document.getElementById("delivery-amount");
+              var amount = parseFloat(deliveryAmount.innerText.replace("$", ""));
+              var convertedAmount = (amount / rate).toFixed(2);
+          
+              // Update the delivery amount with the converted value
+              deliveryAmount.innerText = targetCurrency + " " + convertedAmount;
+          
+              // Convert the minimum order amount for free delivery
+              var minimumOrderAmount = 21.76;
+              var convertedMinimumAmount = (minimumOrderAmount / rate).toFixed(2);
+          
+              // Update the minimum order amount for free delivery
+              document.getElementById("delivery-amount").innerText = targetCurrency + " " + convertedMinimumAmount;
+            }
+          
+            // Add click event listeners to the currency buttons
+            document.getElementById("currency-php").addEventListener("click", function() {
+              selectedCurrency.innerText = "PHP \u25BE"; // \u25BE is the down arrow symbol
+              convertCurrency("PHP");
+            });
+            document.getElementById("currency-eur").addEventListener("click", function() {
+              selectedCurrency.innerText = "EUR \u25BE";
+              convertCurrency("EUR");
+            });
+            document.getElementById("currency-usd").addEventListener("click", function() {
+              selectedCurrency.innerText = "USD \u25BE";
+              convertCurrency("USD");
+            });
+          </script>
+          
     </body>
 </html>
