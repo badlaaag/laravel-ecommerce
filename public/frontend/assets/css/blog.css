@@ -69,6 +69,25 @@ p {
 .blog-wrap-2 .blog-content-2 .blog-share-comment .blog-share .share-social ul li a.instagram {
     background-color: #c32aa3;
     border: 1px solid #c32aa3;
+    
+}
+.blog-wrap-2 .blog-content-2 .blog-share-comment .blog-share .share-social ul li a {
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 25px;
+    line-height: 24px;
+    text-align: center;
+    width: 25px;
+}
+@media only screen and (max-width: 767px){
+.blog-wrap-2 .blog-content-2 .blog-share-comment .blog-share .share-social ul li a {
+    font-size: 12px;
+    height: 25px;
+    line-height: 23px;
+    width: 25px;
+    }
 }
 .blog-wrap-2 {
     box-shadow: 0 3px 5px rgba(85,85,85,.2);

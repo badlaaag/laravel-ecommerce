@@ -225,21 +225,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-sm-4">
-                        <div class="copyright mb-30">
+                        <div class="copyright mb-5 ml-3">
                             <div class="footer-logo">
-                                <a href="/">
+                                <a href={{URL::to("/")}}>
                                     <img height="60" style="transform:scale(1.5);object-fit: cover;" 
                                     src="{{ asset('frontend/assets/img/logo/logo.png') }}"
-                                     alt="">
+                                     alt="techomatic">
                                 </a>
                             </div>
                             <p>© 2023 
-                            <a href="https://hasthemes.com" rel="noopener noreferrer" target="_blank">
+                            <a href="https:teachomatic.shop" rel="noopener noreferrer" target="_blank">
                             </a>.<br> All Rights Reserved</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4">
-                        <div class="footer-widget mb-30 ml-30">
+                        <div class="footer-widget mb-30 ml-3">
                             <div class="footer-title">
                                 <h3>ABOUT US</h3>
                             </div>
@@ -254,7 +254,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4">
-                        <div class="footer-widget mb-30 ml-50">
+                        <div class="footer-widget mb-30 ml-3">
                             <div class="footer-title">
                                 <h3>USEFUL LINKS</h3>
                             </div>
@@ -269,7 +269,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-6">
-                        <div class="footer-widget mb-30 ml-50 ">
+                        <div class="footer-widget mb-30 ml-3 ">
                             <div class="footer-title">
                                 <h3>FOLLOW US</h3>
                             </div>
@@ -283,8 +283,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="footer-widget mb-30 ml-70">
+                    <div class="col-lg-4 col-sm-6 ">
+                        <div class="footer-widget mb-30 ml-2">
                             <div class="footer-title">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.6877769158345!2d121.13563731543258!3d14.73023597783421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bb18144bf653%3A0x34e13592dd4050d0!2sRodriguez%20Hwy%2C%20Rodriguez%2C%20Rizal!5e0!3m2!1sen!2sph!4v1679020338140!5m2!1sen!2sph" width="600" height="200" class="border-0 w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                                 </iframe>

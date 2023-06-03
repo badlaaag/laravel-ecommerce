@@ -1804,7 +1804,6 @@
     }
     .mean-container a.meanmenu-reveal {
         top: -76px;
-        border: 1px solid #666;
         height: 18px;
         line-height: 1;
     }
@@ -3360,7 +3359,6 @@
     }
     .mean-container a.meanmenu-reveal {
         top: -76px;
-        border: 1px solid #666;
         height: 18px;
         line-height: 1;
     }

@@ -101,20 +101,6 @@
     20. Blog details
     21. Contact us
     22. About us
-    23. Fruits page
-        23.1 Heade style of fruits
-        23.2 Slider style of fruits
-        23.3 Banner style of fruits
-        23.4 Product style of fruits
-        23.5 Banner style 2 of fruits
-        23.6 Services style of fruits
-        23.7 Product coundoun style of fruits
-        23.8 Product Best seller style of fruits
-        23.9 Testimonial style of fruits
-        23.10 Blog style of fruits
-        23.11 Newsletter style of fruits
-        23.12 Footer style of fruits
-    24. Modal style
     
 -----------------------------------------------------------------------------------*/
 
@@ -8621,7 +8607,7 @@ a.bundle-btn {
 }
 #scrollUp {
     background: #131921 none repeat scroll 0 0;
-    bottom: 85px;
+    bottom: 16px;
     color: #ffffff;
     cursor: pointer;
     display: none;
@@ -8641,8 +8627,7 @@ a.bundle-btn {
     color: #ffffff;
 }
 
-/*----- 23. Fruits page -----*/
-/* 23.1 Heade style of fruits */
+/* 23.1 Heade style */
 
 .header-sticky-3 {
     left: 0;
@@ -8697,7 +8682,7 @@ a.bundle-btn {
     color: #68a001;
 }
 
-/* 23.2 Slider style of fruits */
+/* 23.2 Slider style of */
 
 .slider-area {
     position: relative;
@@ -8809,7 +8794,7 @@ a.bundle-btn {
     content: none;
 }
 
-/* 23.3 Banner style of fruits */
+/* 23.3 Banner style of  */
 
 .furits-banner-wrapper > img {
     width: 100%;
@@ -8857,7 +8842,7 @@ a.bundle-btn {
     border-radius: 50px;
 }
 
-/* 23.4 Product style of fruits */
+/* 23.4 Product style of  */
 
 .product-fruit-wrapper,
 .product-fruit-img {
@@ -8957,7 +8942,7 @@ a.bundle-btn {
     position: relative;
 }
 .section-title-furits > h2::before {
-    background-color: #85bd02;
+    background-color: #531516;
     bottom: -13px;
     content: "";
     height: 2px;
@@ -8986,7 +8971,7 @@ a.bundle-btn {
     transform: translate(-50%, -100%);
 }
 
-/* 23.5 Banner style 2 of fruits */
+/* 23.5 Banner style 2 of  */
 
 .single-fruits-choose {
     display: flex;
@@ -9072,7 +9057,7 @@ a.bundle-btn {
     transform: scale(1.1);
 }
 
-/* 23.6 Services style of fruits */
+/* 23.6 Services style of */
 
 .single-fruits-services {
     display: flex;
