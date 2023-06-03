@@ -102,7 +102,7 @@
                         </div>
                     </div>
                     @empty
-                        No product found!
+                        <p class="text-black">No product found!</p>
                     @endforelse
                     </div>
                 </div>
