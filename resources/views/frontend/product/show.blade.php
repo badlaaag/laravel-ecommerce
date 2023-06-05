@@ -24,8 +24,8 @@
                                              id="pro-details{{ $loop->index }}" role="tabpanel">
                                             <div class="easyzoom easyzoom--overlay">
                                                 @if($product->media)
-                                                    <a href="{{ asset('storage/images/products/' . $media->file_name ) }}">
-                                                        <img src="{{ asset('storage/images/products/' . $media->file_name ) }}"
+                                                    <a href="{{ Storage::url('storage/images/products/' . $media->file_name ) }}">
+                                                        <img src="{{ Storage::url('/images/products/' . $media->file_name ) }}"
                                                              alt="{{ $product->name }}">
                                                     </a>
                                                 @else
@@ -41,7 +41,7 @@
                                         <a class="{{ $loop->index == 0 ? 'active' : '' }} mr-12"
                                            href="#pro-details{{ $loop->index }}" data-toggle="tab" role="tab"
                                            aria-selected="true">
-                                            <img style="width: 90px;" src="{{ asset('storage/images/products/' . $media->file_name ) }}"
+                                            <img style="width: 90px;" src="{{ Storage::url('/images/products/' . $media->file_name ) }}"
                                                  alt="{{ $product->name }}">
                                         </a>
                                     @endforeach
