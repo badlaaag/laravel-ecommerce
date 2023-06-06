@@ -45,7 +45,7 @@ class CartController extends Controller
 
         try {
             if ($product->quantity < $itemQuantity) {
-                throw new OutOfStockException('produk '. $product->name .' kosong !');
+                throw new OutOfStockException('Out of Stock'. $product->name .'');
             }
         } catch (\App\Exceptions\OutOfStockException $exception) {
             return redirect()->back()->with([
@@ -87,7 +87,7 @@ class CartController extends Controller
 
                 try {
                     if ($carts[$cartId]->associatedModel->quantity < $item['quantity']) {
-                        throw new OutOfStockException('produk '. $carts[$cartId]->associatedModel->name .' tersisa ' . $carts[$cartId]->associatedModel->quantity);
+                        throw new OutOfStockException('Out of Stock '. $carts[$cartId]->associatedModel->name .' Available Product =' . $carts[$cartId]->associatedModel->quantity);
                     }
                 } catch (\App\Exceptions\OutOfStockException $exception) {
                     return redirect()->back()->with([

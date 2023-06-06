@@ -18,7 +18,7 @@
 	<!-- checkout-area start -->
 	<div class="checkout-area ptb-100">
 		<div class="container">
-        <form action="{{ route('checkout') }}" method="post">
+        <form action="" method="post">
             @csrf
 			<div class="row">
 				<div class="col-lg-6 col-md-12 col-12">
@@ -59,7 +59,7 @@
 									<label>Province<span class="required">*</span></label>
 									<select name="province_id"id="province-id" value="{{ auth()->user()->province_id }}">
 											<option value="">- Please Select -</option>
-											@foreach($provinces as $province => $pro)
+											
 											<option {{ auth()->user()->province_id == $province ? 'selected' : null }} value="{{ $province }}">{{ $pro }}</option>
 											@endforeach
 									</select> 
@@ -69,7 +69,7 @@
 								<div class="checkout-form-list">
 									<label>City<span class="required">*</span></label>
 									<select name="city_id" id="city-id" value="{{ auth()->user()->city_id }}" >
-											@foreach($cities as $id => $city)
+											
 											<option {{ auth()->user()->city_id == $id ? 'selected' : null }} value="{{ $id }}">{{ $city }}</option>
 											@endforeach
                                  	</select> 
@@ -188,9 +188,9 @@
 									</tr>							
 								</thead>
 								<tbody>
-									@forelse ($items as $item)
+									
 										@php
-                                            $product = $item->associatedModel;
+                                           
 											$image = !empty($product->firstMedia) ? asset('storage/images/products/'. $product->firstMedia->file_name) : asset('frontend/assets/img/cart/3.jpg')
 											
 										@endphp

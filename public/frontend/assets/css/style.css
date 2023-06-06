@@ -6219,6 +6219,11 @@ h5.panel-title {
 .product-content-list {
     margin-left: 30px;
 }
+.product-content h4{
+    color:black!important;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
 .product-list-info > h4 {
     color: #191919;
     font-size: 20px;

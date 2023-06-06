@@ -24,7 +24,7 @@
                                              id="pro-details{{ $loop->index }}" role="tabpanel">
                                             <div class="easyzoom easyzoom--overlay">
                                                 @if($product->media)
-                                                    <a href="{{ asset('storage/images/products/' . $media->file_name ) }}">
+                                                    <a href="{{ asset('/storage/images/products/' . $media->file_name ) }}">
                                                         <img src="{{ asset('storage/images/products/' . $media->file_name ) }}"
                                                              alt="{{ $product->name }}">
                                                     </a>
@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="details-price">
-                            <span>Rp.{{ number_format($product->price) }}</span>
+                            <span>₱{{ number_format($product->price) }}</span>
                         </div>
                         <p>{!! $product->description !!}</p>
                             <form action="{{ route('cart.store') }}" method="post">
@@ -196,7 +196,7 @@
                                 </div>
                                 <div class="funiture-product-content text-center">
                                     <h4><a href="{{ route('product.show', $product->slug) }}">{{ $product->name }}</a></h4>
-                                    <span>Rp.{{ number_format($product->price) }}</span>
+                                    <span>₱{{ number_format($product->price) }}</span>
                                 </div>
                             </div>
                         @endforeach
